@@ -1,0 +1,8 @@
+@use "../../../../stylesheets/variable" as *;
+
+.footer-list-header {
+  text-transform: uppercase;
+  color: $color-white-1;
+  font-size: $fsize-3;
+  margin-bottom: 20px;
+}

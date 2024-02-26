@@ -1,0 +1,6 @@
+@use "../../../stylesheets/variable" as *;
+
+h2 {
+  font-size: $fsize-6;
+  color: $color-blue-7;
+}

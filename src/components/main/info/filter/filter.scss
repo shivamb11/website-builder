@@ -1,0 +1,7 @@
+@use "../../../../stylesheets/variable" as *;
+
+.filter {
+  border: none;
+  font-size: $fsize-1;
+  background-color: $color-white-2;
+}

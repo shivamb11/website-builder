@@ -1,0 +1,19 @@
+@use "../../../stylesheets/mixin" as *;
+@use "../../../stylesheets/variable" as *;
+
+.categories {
+  @include flex;
+  gap: 15px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  color: $color-grey-3;
+
+  p {
+    font-size: $fsize-1;
+  }
+
+  .dash {
+    @extend p;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../../../stylesheets/mixin" as *;
+@use "../../../stylesheets/variable" as *;
+
+.info {
+  @include flex-between;
+  color: $color-grey-2;
+
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 22px;
+    background-color: white;
+  }
+}

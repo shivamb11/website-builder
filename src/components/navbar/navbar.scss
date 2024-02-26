@@ -1,0 +1,18 @@
+@use "../../stylesheets/mixin" as *;
+@use "../../stylesheets/variable" as *;
+
+.navbar {
+  @include flex-center;
+  background-color: $color-black-2;
+  padding: 10px;
+  column-gap: 40px;
+
+  @media (max-width: 800px) {
+    column-gap: 30px;
+  }
+
+  @media (max-width: 530px) {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+}

@@ -1,0 +1,7 @@
+@use "../../../stylesheets/mixin" as *;
+
+ul {
+  @include flex;
+  column-gap: 40px;
+  line-height: 20px;
+}

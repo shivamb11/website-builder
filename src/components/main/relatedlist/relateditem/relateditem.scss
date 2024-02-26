@@ -1,0 +1,65 @@
+@use "../../../../stylesheets/mixin" as *;
+@use "../../../../stylesheets/variable" as *;
+
+.related-item {
+  @include flex-start-column;
+  background-color: $color-white-1;
+  gap: 15px;
+  padding: 5px 10px;
+
+  div {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .labels {
+    @include flex-start;
+    font-size: $fsize-1;
+    gap: 10px;
+
+    p {
+      color: $color-blue-2;
+      background-color: $color-blue-6;
+      padding: 5px 8px;
+      border-radius: 8px;
+    }
+  }
+
+  .name {
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+  p {
+    color: $color-grey-5;
+  }
+
+  .price {
+    @include flex;
+    gap: 10px;
+
+    .discounted-price {
+      font-size: $fsize-4;
+      color: $color-grey-4;
+    }
+
+    .actual-price {
+      font-size: $fsize-2;
+      color: $color-grey-6;
+    }
+
+    .discount {
+      font-size: $fsize-1;
+      color: $color-red-1;
+    }
+  }
+
+  button {
+    @include btn;
+  }
+
+  @media (max-width: 1000px) {
+    @include flex-between-column;
+  }
+}

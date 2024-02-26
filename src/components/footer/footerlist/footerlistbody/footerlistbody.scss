@@ -1,0 +1,16 @@
+@use "../../../../stylesheets/mixin" as *;
+@use "../../../../stylesheets/variable" as *;
+
+.footer-list-body {
+  @include flex-start-column;
+  color: $color-grey-8;
+  row-gap: 15px;
+
+  .small {
+    font-size: $fsize-1;
+  }
+
+  .md {
+    font-size: $fsize-2;
+  }
+}

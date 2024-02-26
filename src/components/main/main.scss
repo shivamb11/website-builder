@@ -1,0 +1,9 @@
+@use "../../stylesheets/mixin" as *;
+@use "../../stylesheets/variable" as *;
+
+.main {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: $color-white-2;
+}

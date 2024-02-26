@@ -1,0 +1,10 @@
+@use "./stylesheets/mixin" as *;
+
+$color-white-1: #fbfcfd;
+
+.app {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: $color-white-1;
+}

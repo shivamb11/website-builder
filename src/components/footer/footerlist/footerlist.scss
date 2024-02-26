@@ -1,0 +1,7 @@
+@use "../../../stylesheets/mixin" as *;
+
+.footer-list {
+  @include flex-start-column;
+  margin: 10px 0;
+  min-width: 260px;
+}

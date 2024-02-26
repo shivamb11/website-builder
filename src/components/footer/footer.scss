@@ -1,0 +1,14 @@
+@use "../../stylesheets/variable" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $color-black-1;
+  padding: 30px 100px 80px;
+
+  @media (max-width: 820px) {
+    padding: 30px 6rem 80px;
+    flex-wrap: wrap;
+    column-gap: 100px;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../../../stylesheets/mixin" as *;
+@use "../../../stylesheets/variable" as *;
+
+.features {
+  @include flex;
+  gap: 20px;
+  color: $color-grey-2;
+
+  margin: 15px 0;
+  flex-wrap: wrap;
+
+  p {
+    font-size: $fsize-2;
+    background-color: $color-white-1;
+    padding: 6px 25px;
+    border-radius: 12px;
+  }
+}

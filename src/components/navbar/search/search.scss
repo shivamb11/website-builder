@@ -1,0 +1,23 @@
+@use "../../../stylesheets/mixin" as *;
+@use "../../../stylesheets/variable" as *;
+
+.search {
+  @include flex;
+  width: 258px;
+  height: 37px;
+  background-color: $color-white-1;
+  border-radius: 8px;
+  padding: 0 5px;
+  column-gap: 5px;
+
+  .search-icon {
+    height: 24px;
+    width: 24px;
+    color: $color-black-4;
+  }
+
+  input {
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,23 @@
+@use "../../../stylesheets/mixin" as *;
+@use "../../../stylesheets/variable" as *;
+
+.related {
+  @include flex-start-column;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 30px;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    @media (max-width: 716px) {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      margin: 0 auto;
+    }
+  }
+}

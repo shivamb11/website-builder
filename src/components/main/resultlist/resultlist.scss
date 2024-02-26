@@ -1,0 +1,6 @@
+@use "../../../stylesheets/mixin" as *;
+
+.result-list {
+  @include flex-start-column;
+  margin: 20px 0;
+}

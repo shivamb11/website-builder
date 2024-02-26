@@ -1,0 +1,6 @@
+@use "../../../stylesheets/variable" as *;
+
+hr {
+  margin: 15px 0;
+  border: thin solid $color-grey-7;
+}

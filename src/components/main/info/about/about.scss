@@ -1,0 +1,17 @@
+@use "../../../../stylesheets/mixin" as *;
+@use "../../../../stylesheets/variable" as *;
+
+.about {
+  @include flex-between;
+  column-gap: 20px;
+
+  div {
+    @include flex;
+    font-size: $fsize-2;
+    column-gap: 5px;
+  }
+
+  @media (max-width: 690px) {
+    column-gap: 0;
+  }
+}

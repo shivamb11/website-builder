@@ -1,0 +1,10 @@
+@use "../../../../stylesheets/variable" as *;
+
+li {
+  color: $color-grey-1;
+  font-size: $fsize-2;
+
+  &:hover {
+    color: $color-white-1;
+  }
+}
